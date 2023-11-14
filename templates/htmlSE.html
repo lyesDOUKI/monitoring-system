@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Administration Des Systeme d'Exploitation</title>
+</head>
+<style>
+
+    table
+    {
+        width: 80%;
+        height: 5cm;
+        border-collapse: collapse;
+    }
+    td, th
+    {
+        border: 1px solid black;
+    }
+
+</style>
+<body>
+    <h2>Evolution de la RAM (en %) des utilisateurs presents dans la BD : </h2>
+    <img src="{{postRam}}" alt="RAM" width="50%" height="50%">
+    <h2>Evolution de la CPU (en %) des utilisateurs presents dans la BD : </h2>
+    <img src="{{postCpu}}" alt="CPU" width="50%" height="50%">
+    <h2>Evolution de la CPU (en %) et de la RAM (en %) des utilisateurs presents dans la BD : </h2>
+    <img src="{{postBoth}}" alt="deuxgraphe" width="50%" height="50%">
+    <h2>Les informations du dernier utilisateur enregistrer sur la base de donnée : </h2>
+    <table>
+        <tr>
+            <th>utilisateur</th>
+            <th>Espace utilisé</th>
+            <th>RAM %</th>
+            <th>CPU %</th>
+            <th>date </th>
+        </tr>
+        <tr>
+            <td>{{util}}</td>
+            <td>{{disk}}</td>
+            <td>{{ram}}</td>
+            <td>{{cpu}}</td>
+            <td>{{date}}</td>
+        </tr>
+            
+    </table>
+    <br>
+</body>
+</html>

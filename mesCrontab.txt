@@ -1,0 +1,9 @@
+*/1 * * * * bash /home/lyesdouki/sondes.sh >> /home/lyesdouki/infoSys.txt
+
+*/1 * * * * bash /home/lyesdouki/bashsqlite.sh
+
+*/1 * * * * python3 /home/lyesdouki/mail.py
+
+*00 16 * * * bash /home/lyesdouki/sauvegarde.sh >> /home/lyesdouki/mabase.txt
+
+*/5 * * * * python3 /home/lyesdouki/graphique.py
